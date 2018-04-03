@@ -1,0 +1,118 @@
+
+.healty{
+  color: black;
+  font-size: 20px;
+  line-height: 1.5em;
+  position: relative;
+
+  //z-index: 1;
+
+  &:before{
+	content: "";
+	display: block;
+	background-image: url("../img/healt.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 40px;
+	height:100%;
+	position: absolute;
+	z-index: -5;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .5;
+  }
+}
+
+.healty2{
+  height:800px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items:center;
+  text-align: center;
+  p {
+	background-color: rgba(#777, 0.5);
+	span {
+	  font-size: 25px;
+	}
+  }
+}
+
+.shortInfo{
+  color: #777;
+  background-color:white;
+  padding: 40px 15px 0px 15px;
+  text-align: justify;
+  h3, h4{
+	text-align: center;
+  }
+  ol{
+	margin-left:35px;
+	li{
+	  padding: 5px 0;
+	}
+  }
+}
+.omegaBg, .studyBg, .chsBg{
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+.omegaBg{
+  background-image:url("../img/omega.jpg");
+  height: 450px;
+}
+.studyBg{
+  background-image:url("../img/badania.jpg");
+  height: 140px;
+  background-size: contain;
+}
+.chsBg{
+  background-image:url("../img/chs.jpg");
+  height: 600px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 45px auto;
+  box-sizing: border-box;
+  h2 {
+	text-align: center;
+  }
+  p, ul, h3 {
+	padding: 0 15px;
+  }
+  p{
+	line-height: 1.75em;
+	text-indent: 50px;
+  }
+}
+
+.readTxt {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+}
